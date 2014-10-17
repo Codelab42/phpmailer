@@ -1,0 +1,125 @@
+# Schema for the configuration files of the phpmailer module.
+
+phpmailer.message:
+  type: mapping
+  label: 'PHPMailer message defaults'
+  mapping:
+    priority:
+      type: integer
+      label: 'Priority'
+    charset:
+      type: string
+      label: 'Charset'
+    content_type:
+      type: string
+      label: 'Content-Type'
+    encoding:
+      type: string
+      label: 'Encoding'
+phpmailer.settings:
+  type: mapping
+  label: 'PHPMailer settings'
+  mapping:
+    do_verp:
+      type: boolean
+      label: 'Hide password'
+    from_name:
+      type: boolean
+      label: 'From name'
+    always_replyto:
+      type: boolean
+      label: 'Always replyto'
+    dkim_selector:
+      type: string
+      label: 'DKIM selector'
+    dkim_identity:
+      type: string
+      label: 'DKIM identity'
+    dkim_passphrase:
+      type: string
+      label: 'DKIM passphrase'
+    dkim_domain:
+      type: string
+      label: 'DKIM domain'
+    dkim_private:
+      type: string
+      label: 'DKIM private'
+    sign_cert_file:
+      type: string
+      label: 'Sign cert file'
+    sign_key_file:
+      type: string
+      label: 'Sign key file'
+    sign_key_pass:
+      type: string
+      label: 'Sign key pass'
+    xmailer:
+      type: string
+      label: 'XMailer'
+    allow_empty:
+      type: boolean
+      label: 'Allow empty'
+    hide_password:
+      type: boolean
+      label: 'Hide password'
+    single_to:
+      type: boolean
+      label: 'Single to'
+    action_function:
+      type: string
+      label: 'Action function'
+    debug:
+      type: string
+      label: 'Debug'
+    debug_output:
+      type: string
+      label: 'Debug output'
+phpmailer.mail:
+  type: mapping
+  label: 'PHP mail() transport defaults'
+phpmailer.qmail:
+  type: mapping
+  label: 'Qmail transport defaults'
+phpmailer.sendmail:
+  type: mapping
+  label: 'Sendmail transport defaults'
+phpmailer.smtp:
+  type: mapping
+  label: 'SMTP transport defaults'
+  mapping:
+    host:
+      type: string
+      label: 'Host'
+    host_backup:
+      type: string
+      label: 'Host backup'
+    port:
+      type: integer
+      label: 'Port'
+    protocol:
+      type: string
+      label: 'Protocol'
+    username:
+      type: string
+      label: 'Username'
+    password:
+      type: string
+      label: 'Password'
+    auth_type:
+      type: string
+      label: 'Auth type'
+    realm:
+      type: string
+      label: 'Realm'
+    workstation:
+      type: string
+      label: 'Workstation'
+    timeout:
+      type: integer
+      label: 'Timeout'
+    timelimit:
+      type: integer
+      label: 'Timelimit'
+    keepalive:
+      type: boolean
+      label: 'Keepalive'

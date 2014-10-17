@@ -1,0 +1,12 @@
+host: ''
+host_backup: ''
+port: 587
+protocol: 'tls'
+username: ''
+password: ''
+auth_type: 'LOGIN'
+realm: ''
+workstation: ''
+timeout: 300
+timelimit: 30
+keepalive: false

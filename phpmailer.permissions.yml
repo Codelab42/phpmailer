@@ -1,0 +1,4 @@
+administer phpmailer:
+  title: 'Administer PHPMailer'
+  description: 'Adjust PHPMailer settings used to send mail.'
+  restrict access: TRUE

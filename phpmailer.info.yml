@@ -1,0 +1,6 @@
+name: PHPMailer
+type: module
+description: PHPMailer mail system plugin.
+package: Mail
+core: 8.x
+configure: phpmailer.admin_settings

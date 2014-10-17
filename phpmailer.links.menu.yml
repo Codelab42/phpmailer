@@ -1,0 +1,7 @@
+phpmailer.admin_settings:
+  title: 'PHPMailer settings'
+  description: 'Manage PHPMailer settings.'
+  parent: system.admin_config_system
+  route_name: phpmailer.admin_settings
+  dependencies:
+    - composer_manager

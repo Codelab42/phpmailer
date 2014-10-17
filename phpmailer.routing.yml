@@ -1,0 +1,7 @@
+phpmailer.admin_settings:
+  path: '/admin/config/system/phpmailer'
+  defaults:
+    _form: '\Drupal\phpmailer\Form\SettingsForm'
+    _title: 'PHPMailer settings'
+  requirements:
+    _permission: 'administer phpmailer'
