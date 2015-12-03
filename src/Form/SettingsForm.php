@@ -26,6 +26,16 @@ class SettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
+  protected function getEditableConfigNames() {
+    return array(
+      'phpmailer.settings',
+      'phpmailer.smtp'
+    );
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function buildForm(array $form, FormStateInterface $form_state, Request $request = NULL) {
     $settings = $this->config('phpmailer.settings');
     $smtp = $this->config('phpmailer.smtp');
